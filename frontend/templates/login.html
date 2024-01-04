@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+<style>
+    .main{
+       padding:100px 500px;
+    }
+    .container{
+        width:350px;
+        height:400px;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    }
+
+    input{
+        width:300px;
+        height:30px;
+        border-radius:20px;
+    }
+    label{
+       font-size:20px;
+    }
+</style>
+
+<div class="main">
+    <div class="container">
+
+         <h1>Login</h1>
+    <form action="/api/login/" method="post">
+        <label for="email">Email:</label><br>
+        <input type="email" required id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" required id="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+    </div>
+</div>
+
+</body>
+</html>

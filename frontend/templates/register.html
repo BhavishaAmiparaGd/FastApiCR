@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+</head>
+<body>
+<style>
+    .main{
+       padding:100px 500px;
+    }
+    .container{
+        width:350px;
+        height:400px;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    }
+
+    input{
+        width:300px;
+        height:30px;
+        border-radius:20px;
+    }
+    label{
+       font-size:20px;
+    }
+
+
+
+</style>
+<div class="main">
+<div class="container">
+
+     <h2>Sign Up</h2>
+    <form action="/api/register/" method="post">
+    <label for="username">username:</label><br>
+    <input type="text" required id="username" name="username"><br><br>
+    <label for="email">email:</label><br>
+    <input type="email" required id="email" name="email"><br><br>
+    <label for="password">password:</label><br>
+    <input type="password" required id="password" name="password"><br><br>
+    <input type="submit" value="Register">
+</form>
+</div>
+    </div>
+
+</body>
+</html>
