@@ -12,6 +12,8 @@ load_dotenv()
 DATABASE_URL = os.getenv('DB_URL')
 
 if DATABASE_URL is None:
+
+
     raise ValueError("No DATABASE_URL set for the connection.")
 
 
